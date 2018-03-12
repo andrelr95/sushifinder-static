@@ -1,7 +1,12 @@
-$background-main: #cacaca;
-$background-login: #751300;
+$background-main: #D75D6A;
+$background-login: #FAF5F1;
 $color-font-light: #E6E6E6;
 $color-font-dark: #111111;
+$color-box-shadow: #9D444E;
+
+$break-small: 360px;
+$break-large: 1200px;
+
 
 * {
   margin: 0;
@@ -10,12 +15,20 @@ $color-font-dark: #111111;
 }
 
 html, body {
-  width: 100%;
-  height: 100%;
+
+  background-color: $background-main;
+}
+
+label {
+  color: #D75D6A;
+}
+
+h3 {
+    color: $background-main;
 }
 
 hr {
-  background-color: rgb(105, 105, 105);
+  background-color: $background-main;
   height: 1px;
 
   .light {
@@ -23,24 +36,52 @@ hr {
   }
 }
 
+.btn:hover {
+
+    color: $color-font-light;
+    background-color: black;
+
+}
+
+.link {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: $background-main;
+}
+
 .height-center {
   margin-top: 250px;
   height: 400px;
 }
 
+.form-control.input-custom:focus {
+  border-color: $background-main;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px $background-main;
+}
+
 .btn.btn-login{
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 5px;
     border-style: solid;
-    border-width: 2px;
-    color: $color-font-light;
+    border-width: 1px;
+    color: $background-main;
     background-color: $background-login;
-    border-color: $color-font-light;
+    border-color: $background-main;
+}
+
+.btn.btn-login.btn-custom:hover {
+  color: $background-login;
+  background-color: $background-main;
+  border-color: $background-login;
 }
 
 .box {
+  padding: 20px 50px 20px 50px;
   background-color: $background-login;
-  border-color: $color-font-light;
-  color: $color-font-light;
+  border-color: $color-box-shadow;
+  color: $color-font-dark;
+  box-shadow: 0px 0px 15px $color-box-shadow;
   border-style: solid;
   border-width: 1px;
 
