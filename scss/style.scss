@@ -18,12 +18,13 @@ html, body {
   background-color: $background-main;
 }
 
+
 label {
   color: #D75D6A;
 }
 
 h3 {
-    color: $background-main;
+  color: $background-main;
 }
 
 hr {
@@ -37,8 +38,8 @@ hr {
 
 .btn:hover {
 
-    color: $color-font-light;
-    background-color: black;
+  color: $color-font-light;
+  background-color: black;
 
 }
 
@@ -59,14 +60,12 @@ hr {
 }
 
 .btn.btn-login{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    color: $background-main;
-    background-color: $background-login;
-    border-color: $background-main;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  color: $background-main;
+  background-color: $background-login;
+  border-color: $background-main;
 }
 
 .btn.btn-login.btn-custom:hover {
@@ -75,39 +74,34 @@ hr {
   border-color: $background-login;
 }
 
-.box {
-  padding: 20px 50px 20px 50px;
+.login-box,
+.register-box {
   background-color: $background-login;
   border-color: $color-box-shadow;
   color: $color-font-dark;
   box-shadow: 0px 0px 15px $color-box-shadow;
   border-style: solid;
   border-width: 1px;
-
+  width: 360px;
+  margin: 7% auto;
 }
-// #box-container {
-//   height: 100%;
-//   display: flex;
-//   background-color: $background-login;
-//   justify-content: center;
-//   align-items: center;
-//   box-shadow: 1px 1px 15px #888888;
-//   position: relative;
-// }
 
-// #box-item {
-//   background-color: $background-login;
-//   color: $color-font-light;
-//   padding: 15px 25px;
-//   width: 100%;
-//   height: 100%;
-//   border-radius: 5px;
-//   border-style: solid;
-//   border-width: 2px;
-//   border-color: $color-font-light;
-//   max-height: 450px;
-//   max-width: 450px;
-//   position: absolute;
-//   transform: translate(-50%, -50%);
-//   left: 50%;top: 50%;
-// }
+@media (max-width: 768px) {
+  .login-box,
+  .register-box {
+    width: 90%;
+    margin-top: 50px;
+  }
+}
+
+.login-box-body,
+.register-box-body {
+  background: #fff;
+  padding: 20px;
+  border-top: 0;
+  color: #666;
+}
+.login-box-body .form-control-feedback,
+.register-box-body .form-control-feedback {
+  color: #777;
+}
