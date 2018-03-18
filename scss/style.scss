@@ -1,5 +1,5 @@
-$background-main: #D75D6A;
-$background-login: #FAF5F1;
+$background-main: #FAF5F1;
+$background-login: #D75D6A;
 $color-font-light: #E6E6E6;
 $color-font-dark: #111111;
 $color-box-shadow: #9D444E;
@@ -14,17 +14,20 @@ $break-large: 1200px;
   box-sizing: border-box;
 }
 
-html, body {
+html, body{
   background-color: $background-main;
 }
 
+html.login, body.login{
+  background-color: $background-login;
+}
 
 label {
   color: #D75D6A;
 }
 
 h3 {
-  color: $background-main;
+  color: $background-login;
 }
 
 hr {
@@ -46,7 +49,7 @@ hr {
 .link {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: $background-main;
+  color: $background-login;
 }
 
 .height-center {
@@ -56,22 +59,22 @@ hr {
 
 .form-control.input-custom:focus {
   border-color: $background-main;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px $background-main;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px $background-login;
 }
 
 .btn.btn-login{
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  color: $background-main;
-  background-color: $background-login;
-  border-color: $background-main;
-}
-
-.btn.btn-login.btn-custom:hover {
   color: $background-login;
   background-color: $background-main;
   border-color: $background-login;
+}
+
+.btn.btn-login.btn-custom:hover {
+  color: $background-main;
+  background-color: $background-login;
+  border-color: $background-main;
 }
 
 .login-box,
