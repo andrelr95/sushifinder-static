@@ -3,6 +3,19 @@
   padding: 0;
   box-sizing: border-box; }
 
+.navbar-default .navbar-brand {
+  color: #FAF5F1; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #FAF5F1; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #FAF5F1;
+  color: #D75D6A; }
+
+.navbar {
+  background-color: #D75D6A; }
+
 html, body {
   background-color: #FAF5F1; }
 
