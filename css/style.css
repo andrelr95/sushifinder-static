@@ -57,6 +57,15 @@ hr {
   border-color: #FAF5F1;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #D75D6A; }
 
+.navbar-brand {
+  padding: 7px 0px; }
+
+@media (max-width: 768px) {
+  .navbar > .container .navbar-brand {
+    margin-left: 15px; } }
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand {
+    margin-left: 0px; } }
 .btn.btn-login {
   border-radius: 5px;
   border-style: solid;
