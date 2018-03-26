@@ -24,8 +24,8 @@ $break-large: 1200px;
   position: relative;
 }
 
-.padding-default {
-  margin: 15px;
+.margin-default {
+  margin: 15px 0px;
 }
 
 p.price {
@@ -131,12 +131,20 @@ hr {
   .navbar>.container .navbar-brand {
     margin-left: 15px;
   }
+  .box-wrapper {
+    margin-bottom: 5px
+  }
+
+  .margin-default {
+    margin: 15px 0px;
+  }
 }
 
 @media (min-width: 768px){
   .navbar>.container .navbar-brand {
     margin-left: 0px;
   }
+
 }
 
 .btn.btn-login{

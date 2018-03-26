@@ -11,8 +11,8 @@
   min-height: 185px;
   position: relative; }
 
-.padding-default {
-  margin: 15px; }
+.margin-default {
+  margin: 15px 0px; }
 
 p.price {
   color: #D75D6A;
@@ -90,7 +90,13 @@ hr {
 
 @media (max-width: 768px) {
   .navbar > .container .navbar-brand {
-    margin-left: 15px; } }
+    margin-left: 15px; }
+
+  .box-wrapper {
+    margin-bottom: 5px; }
+
+  .margin-default {
+    margin: 15px 0px; } }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand {
     margin-left: 0px; } }
