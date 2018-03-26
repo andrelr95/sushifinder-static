@@ -11,6 +11,13 @@
   min-height: 185px;
   position: relative; }
 
+.padding-default {
+  margin: 15px; }
+
+p.price {
+  color: #D75D6A;
+  font-size: x-large; }
+
 .h1, .h2, .h3, h1, h2, h3 {
   margin-top: 10px; }
 
