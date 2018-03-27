@@ -79,7 +79,7 @@ label {
   color: #D75D6A;
 }
 
-h3 {
+h1, h3 {
   color: $background-login;
 }
 
@@ -90,6 +90,10 @@ hr {
   .light {
     background-color: $color-font-light;
   }
+}
+
+.btn {
+  margin-bottom: 5px;
 }
 
 .btn:hover {
